@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin:0; padding:14px 16px; width:260px; background:#1e1e20; color:#ececf1;
+         font:400 13px/1.45 ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif; }
+  h1 { margin:0 0 12px; font-size:13px; font-weight:600; }
+  label { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:9px 0; color:#b9b9c2; }
+  input[type=number] { width:82px; background:#2c2c30; border:1px solid #3a3a42; color:#ececf1;
+                       border-radius:5px; padding:4px 6px; font:inherit; text-align:right; }
+  input[type=checkbox] { accent-color:#8e8ea0; }
+  p.note { margin:12px 0 0; font-size:11px; color:#7c7c88; line-height:1.5; }
+  hr { border:0; border-top:1px solid #33333a; margin:12px 0; }
+</style>
+</head>
+<body>
+  <h1>Token Counter</h1>
+  <label>Context limit <input type="number" id="contextLimit" min="1000" step="1000"></label>
+  <label>Context bar <input type="checkbox" id="showBar"></label>
+  <label>Usage bars <input type="checkbox" id="showUsage"></label>
+  <label>Cache timer <input type="checkbox" id="showCache"></label>
+  <hr>
+  <label>Console diagnostics <input type="checkbox" id="debug"></label>
+  <p class="note">Counts are approximate. They exclude the hidden system prompt, tool definitions and attachments, so the real figure runs higher.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Token Counter</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 48px 24px 96px; max-width: 34rem;
+    font: 400 16px/1.6 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    color: #23252b; background: #fff;
+  }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 32px 0 8px; }
+  .date { color: #6e7178; font-size: 14px; margin: 0 0 32px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: #f2f3f5; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  a { color: #23252b; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e4e5e9;
+           font-size: 14px; color: #6e7178; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ececf1; background: #1b1c1f; }
+    code { background: #2c2d31; }
+    a { color: #ececf1; }
+    footer { border-top-color: #33343a; }
+    .date, footer { color: #9a9aa5; }
+  }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="date">Token Counter for ChatGPT · last updated 15 September 2026</p>
+
+<p>This extension does not collect, transmit, sell, or share any personal data.
+There is no server, no analytics, and no third-party service of any kind.</p>
+
+<h2>What it reads</h2>
+<p>To count the tokens in your conversation, the extension reads:</p>
+<ul>
+  <li>The text of the ChatGPT conversation open in your browser tab.</li>
+  <li>Responses from chatgpt.com's own endpoints that the page has already
+      requested, to read conversation contents and usage figures.</li>
+  <li>The authorization header the ChatGPT page attaches to its own requests.
+      This is held in memory only, used solely to re-issue requests to
+      chatgpt.com on the same origin, and never stored or sent anywhere else.</li>
+</ul>
+<p>All of this happens locally in your browser. Nothing leaves your device.</p>
+
+<h2>What it stores</h2>
+<p>Your display preferences only — context limit, and whether each element is
+shown. These are kept in Chrome's extension storage and synced across your own
+signed-in Chrome profiles by Chrome itself. They contain no conversation data.</p>
+
+<h2>What it sends</h2>
+<p>Nothing. The extension makes no requests to any domain other than
+chatgpt.com, and those go only to endpoints the ChatGPT page itself already
+uses.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><code>storage</code> — saves your display preferences.</li>
+  <li>Host access to <code>chatgpt.com</code> — required because counting a
+      conversation means reading that conversation. The extension runs on no
+      other site.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>Any change to this policy ships with a new version of the extension and is
+reflected in the date above.</p>
+
+<h2>Contact</h2>
+<p><a href="https://github.com/DrGenAI/Token-Counter/issues">Open an issue</a>
+on GitHub.</p>
+
+<footer>
+  Not affiliated with, endorsed by, or sponsored by OpenAI.
+  ChatGPT is a trademark of OpenAI.
+  <br>
+  <a href="https://github.com/DrGenAI/Token-Counter">Source code</a> · MIT
+</footer>
+</body>
+</html>
