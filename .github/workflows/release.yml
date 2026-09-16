@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '20'
       - name: Build package
-        run: ./tools/build.sh
+        run: bash tools/build.sh
       - name: Attach zip to the release
         uses: softprops/action-gh-release@v2
         with:
