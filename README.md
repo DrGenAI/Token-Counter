@@ -83,7 +83,8 @@ one-line edit.
 
 ## Building
 
-```bash tools/build.sh
+```bash
+bash tools/build.sh
 ```
 
 Reinstalls `gpt-tokenizer`, rebuilds `src/tokenizer.bundle.js`, and writes
